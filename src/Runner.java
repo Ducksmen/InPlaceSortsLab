@@ -20,5 +20,10 @@ public class Runner
         list1.selectionSort(arrayDouble);
         System.out.println("Selection Sorting: " + (System.nanoTime()-time)  + " Milliseconds");
         System.out.println(Arrays.toString(arrayDouble));
+        time = System.nanoTime();
+        int[][] array2d = list1.genInts2(1000);
+        list1.challengeFour(array2d);
+        System.out.println("Challenge4: " + (System.nanoTime()-time)  + " Milliseconds");
+        System.out.println(Arrays.toString(array2d));
     }
 }
